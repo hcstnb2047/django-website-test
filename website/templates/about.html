@@ -19,12 +19,20 @@
     スキルがありません
     {%endfor %}
 </ul>
-<ul>
 <h2>資格</h2>
+<ul>
     {% for exam in exams %}
     <li>{{ exam }}</li>
     {% empty %}
     資格がありません
+    {%endfor %}
+</ul>
+<h2>好きな映画</h2>
+<ul>
+    {% for movie in movies %}
+    <li>{{ movie }}</li>
+    {% empty %}
+    ありません
     {%endfor %}
 </ul>
 {% endblock %}
