@@ -12,4 +12,12 @@
     スキルがありません
     {%endfor %}
 </ul>
+<ul>
+<h2>資格</h2>
+    {% for skill in skills %}
+    <li>{{ skill }}</li>
+    {% empty %}
+    資格がありません
+    {%endfor %}
+</ul>
 {% endblock %}

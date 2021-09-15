@@ -17,8 +17,14 @@ class AboutView(TemplateView):
         ctxt["num_services"]=123
         ctxt["skills"]=[
             "Python",
-            "C++",
+            "Java",
             "JavaScript",
+            ]
+        ctxt["exams"]=[
+            "応用情報技術者試験",
+            "基本情報技術者試験",
+            "SEA/J 情報セキュリティ技術認定基礎",
+            "Python3認定技術者試験",
             ]
         return ctxt
     
