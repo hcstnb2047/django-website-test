@@ -4,7 +4,7 @@
 <h1>自己紹介</h1>
 <h2>実績</h2>
 <ul>
-    {% for skill in skills %}
+    {% for achieve in achieves %}
     <li>{{ achieve }}</li>
     {% empty %}
     実績がありません
@@ -21,8 +21,8 @@
 </ul>
 <ul>
 <h2>資格</h2>
-    {% for skill in skills %}
-    <li>{{ exams }}</li>
+    {% for exam in exams %}
+    <li>{{ exam }}</li>
     {% empty %}
     資格がありません
     {%endfor %}

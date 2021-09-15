@@ -15,7 +15,7 @@ class AboutView(TemplateView):
     def get_context_data(self):
         ctxt = super().get_context_data()
         ctxt["num_services"]=123
-        ctxt["achieve"]=[
+        ctxt["achieves"]=[
             "HOKKAIDO学生アプリコンテストにてクリプトン・フューチャー・メディア賞を受賞"
         ]
         ctxt["skills"]=[
